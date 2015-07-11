@@ -14,6 +14,7 @@
  */
 
 namespace Prado;
+use Prado\Util\IBaseBehavior;
 use Prado\Web\Javascripts\TJavaScriptLiteral;
 use Prado\Web\Javascripts\TJavaScriptString;
 use Prado\Util\TCallChain;
