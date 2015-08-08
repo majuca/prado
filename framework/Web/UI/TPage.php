@@ -310,7 +310,6 @@ class TPage extends TTemplateControl
 	 */
 	protected function processCallbackRequest($writer)
 	{
-		Prado::using('Prado\Web\UI\ActiveControls\TActivePageAdapter');
 
 		$this->setAdapter(new TActivePageAdapter($this));
 
@@ -598,7 +597,6 @@ class TPage extends TTemplateControl
 	{
 		if(!$this->_clientScript) {
 			$className = $classPath = $this->getService()->getClientScriptManagerClass();
-			Prado::using($className);
 
 			if($className!=='\Prado\Web\UI\TClientScriptManager' && !is_subclass_of($className,'\Prado\Web\UI\TClientScriptManager'))
 				throw new THttpException(404,'page_csmanagerclass_invalid',$className);

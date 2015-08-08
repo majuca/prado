@@ -18,11 +18,9 @@ use Prado\Prado;
 use Prado\TPropertyValue;
 use Prado\Web\UI\WebControls\TPanel;
 
-Prado::using('System.Web.UI.ActiveControls.TActiveControlAdapter');
 /**
  * Load active panel.
  */
-Prado::using('System.Web.UI.ActiveControls.TActivePanel');
 
 
 /**

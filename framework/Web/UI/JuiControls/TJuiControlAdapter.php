@@ -14,7 +14,6 @@ namespace Prado\Web\UI\JuiControls;
 use Prado\Prado;
 use Prado\Web\UI\ActiveControls\TActiveControlAdapter;
 
-Prado::using('System.Web.UI.ActiveControls.TActiveControlAdapter');
 
 /**
  * TJuiControlAdapter class
