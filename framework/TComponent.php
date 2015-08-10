@@ -432,7 +432,7 @@ class TComponent
 		foreach($fx as $func)
 			$this->attachEventHandler($func,array($this,$func));
 
-		if(is_a($this,'IDynamicMethods')) {
+		if(is_a($this,'Prado\\Util\\IDynamicMethods')) {
 			$this->attachEventHandler(TComponent::GLOBAL_RAISE_EVENT_LISTENER,array($this,'__dycall'));
 			array_push($fx,TComponent::GLOBAL_RAISE_EVENT_LISTENER);
 		}
@@ -466,7 +466,7 @@ class TComponent
 		foreach($fx as $func)
 			$this->detachEventHandler($func,array($this,$func));
 
-		if(is_a($this,'IDynamicMethods')) {
+		if(is_a($this,'Prado\\Util\\IDynamicMethods')) {
 			$this->detachEventHandler(TComponent::GLOBAL_RAISE_EVENT_LISTENER,array($this,'__dycall'));
 			array_push($fx,TComponent::GLOBAL_RAISE_EVENT_LISTENER);
 		}
