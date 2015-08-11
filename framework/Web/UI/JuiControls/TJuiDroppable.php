@@ -121,7 +121,7 @@ class TJuiDroppable extends TActivePanel implements IJuiOptions, ICallbackEventH
 		parent::addAttributesToRender($writer);
 
 		$writer->addAttribute('id',$this->getClientID());
-		$options=TJavascript::encode($this->getPostBackOptions());
+		$options=TJavaScript::encode($this->getPostBackOptions());
 		$cs=$this->getPage()->getClientScript();
 		$code="jQuery('#".$this->getClientId()."').droppable(".$options.");";
 		$cs->registerEndScript(sprintf('%08X', crc32($code)), $code);
